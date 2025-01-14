@@ -1,0 +1,106 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+/* logo CSS */
+
+.Navbar img {
+  width: 72px;
+  height: 42.75px;
+}
+
+/* NavLink CSS */
+ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+ul li a {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Header Login Button CSS */
+
+button {
+  padding: 6px 1rem;
+  background-color: var(--button-bgcolor);
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 19.36px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+}
+
+.Navlink-Btn{
+    display: none;
+}
+
+/* Menu Icon CSS */
+.menu-icon-container {
+  display: none;
+}
+
+.menu-icon-container .bx {
+  font-size: 2rem;
+}
+
+/* Mobile Responsive Design CSS */
+@media screen and (max-width: 540px) {
+
+    body{
+        padding: 0 5vw;
+    }
+
+    /* Menu Icon CSS */
+    .menu-icon-container {
+        display: block;
+    }
+
+    .Navbar{
+        /* background-color: antiquewhite; */
+        position: relative;
+    }
+/* NavLink CSS */
+    ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        /* border: 2px solid black; */
+        position: absolute;
+        left: -150%;
+        top: 100%;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        transition: all 0.5s ease-in;
+        z-index: 10;
+      }
+
+      .Navlink-Btn{
+        display: block;
+      }
+    
+      /* login-primary-btn CSS */
+      .login-primary-btn{
+        display: none;
+      }
+}

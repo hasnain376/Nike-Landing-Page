@@ -1,0 +1,176 @@
+main{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* text container CSS */
+.text-container{
+    /* background-color: aquamarine; */
+    max-width: 700px;
+}
+
+.text-container h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 102px;
+    font-weight: 800;
+}
+
+.text-container p{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    max-width: 60%;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.text-container .Btn-container{
+    margin-top: 1rem;
+}
+
+.text-container .Btn-container .shop-btn{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 29.05px;
+    border: 2px solid var(--button-bgcolor);
+}
+
+.text-container .Btn-container .category-btn{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 29.05px;
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 2px solid black;
+    margin-left: 0.5rem;
+}
+
+.text-container .shop-container h6{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19.36px;
+    margin-top: 1rem;
+}
+
+.text-container .shop-container .shop{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-container .shop-container .shop img{
+    width: 32px;
+    height: 32px;
+    margin-top: 1rem;
+}
+
+/* img-container CSS */
+.img-container{
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+}
+
+.img-container img{
+    width: 530px;
+    height: 487.06px;
+    /* background-color: aqua; */
+}
+
+
+/* 1024px Responsive Design */
+@media screen and (max-width:1024px) {
+    .text-container h1{
+        line-height: 60px;
+    }
+
+    .text-container p{
+        max-width: 100%;
+    }
+    
+    
+    .img-container img{
+        width: 430px;
+        height: 430px;
+        /* background-color: aqua; */
+    }
+}
+
+/* 768px Responsive Design */
+@media screen and (max-width:768px) {
+    .text-container h1{
+        line-height: 50px;
+    }
+
+    .text-container .Btn-container .shop-btn{
+        font-size: 1rem;
+    }
+
+    .text-container .Btn-container .category-btn{
+        font-size: 1rem;
+    }
+
+    .img-container img{
+        width: 300px;
+        height: 300px;
+        /* background-color: aqua; */
+    }
+}
+
+/* 425px Responsive Design */
+@media screen and (max-width:430px) {
+    .Hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        padding: 0 1rem;
+        margin-top: 2vw;
+    }
+
+    .text-container h1{
+        line-height: 55px;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .text-container p{
+        text-align: justify;
+    }
+}
+
+
+/* 375px Responsive Design */
+@media screen and  (max-width:375px) {
+   .Hero{
+    margin-top: 15rem;
+   }
+
+    .text-container h1{
+        line-height: 40px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .text-container p{
+        text-align: justify;
+    }
+
+    .img-container img{
+        margin-left: 3rem;
+    }
+}
